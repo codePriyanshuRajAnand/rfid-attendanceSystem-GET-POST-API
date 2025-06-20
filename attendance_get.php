@@ -5,7 +5,7 @@ include "_db_conn.php";
 function getAttendance(){
 	global $conn;
 
-	$sql = "SELECT * FROM attendance";
+	$sql = "SELECT * FROM <attendance_table>";
 	$res = mysqli_query($conn, $sql);
 
 	if($res){
