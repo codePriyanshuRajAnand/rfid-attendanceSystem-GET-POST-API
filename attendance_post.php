@@ -21,7 +21,7 @@ function post_Attendance($attendanceInput){
 	if(empty(trim($rf_id))){
 		return erro422("Enter RF ID");
 	}else{
-		$sql = "INSERT INTO attendance (`rfid`) VALUES('$rf_id') ";
+		$sql = "INSERT INTO <attendance_table> (`rfid`) VALUES('$rf_id') ";
 		$res = mysqli_query($conn, $sql);
 
 		if($res){
